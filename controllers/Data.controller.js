@@ -21,6 +21,36 @@ exports.tolist = (req, res) => {
     })
 };
 
+exports.type = (req, res) => {
+    db.collection('type').find().toArray(function (err, result) {
+        if (err) throw err
+        res.json(result).status(200)
+    })
+};
+
+exports.unit = (req, res) => {
+    db.collection('unit').find().toArray(function (err, result) {
+        if (err) throw err
+        res.json(result).status(200)
+    })
+};
+
+exports.approve_sec_user = (req, res) => {
+    db.collection('approve_sec_user').find().toArray(function (err, result) {
+        if (err) throw err
+        res.json(result).status(200)
+    })
+};
+
+exports.approve_user = (req, res) => {
+    db.collection('approve_user').find().toArray(function (err, result) {
+        if (err) throw err
+        res.json(result).status(200)
+    })
+};
+
+
+
 
 
 
