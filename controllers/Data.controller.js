@@ -49,9 +49,57 @@ exports.approve_user = (req, res) => {
     })
 };
 
+exports.insertMedicalsupplies = (req, res) => {
+    var value = req.params.value;
+    db.collection('medicalsupplies').insert([{"value":value}], function(err, docs) {
+		res.send('Add new ' + docs.name + ' Completed!');
+	})
+}
 
+exports.insertnonMedicalSupplies = (req, res) => {
+    var value = req.params.value;
+    db.collection('nonMedicalSupplies').insert([{"value":value}], function(err, docs) {
+		res.send('Add new ' + docs.name + ' Completed!');
+	})
+}
 
+exports.insertHousework = (req, res) => {
+    var value = req.params.value;
+    db.collection('houseWork').insert([{"value":value}], function(err, docs) {
+		res.send('Add new ' + docs.name + ' Completed!');
+	})
+}
 
+exports.insertOfficeMaterial = (req, res) => {
+    var value = req.params.value;
+    db.collection('officeMaterial').insert([{"value":value}], function(err, docs) {
+		res.send('Add new ' + docs.name + ' Completed!');
+	})
+}
+exports.insertComputerMaterial = (req, res) => {
+    var value = req.params.value;
+    db.collection('computerMaterial').insert([{"value":value}], function(err, docs) {
+		res.send('Add new ' + docs.name + ' Completed!');
+	})
+}
 
+exports.insertDisinfectantWater = (req, res) => {
+    var value = req.params.value;
+    db.collection('disinfectantWater').insert([{"value":value}], function(err, docs) {
+		res.send('Add new ' + docs.name + ' Completed!');
+	})
+}
 
+exports.insertPrintedForm = (req, res) => {
+    var value = req.params.value;
+    db.collection('printedForm').insert([{"value":value}], function(err, docs) {
+		res.send('Add new ' + docs.name + ' Completed!');
+	})
+}
 
+exports.insertSaline = (req, res) => {
+    var value = req.params.value;
+    db.collection('saline').insert([{"value":value}], function(err, docs) {
+		res.send('Add new ' + docs.name + ' Completed!');
+	})
+}
