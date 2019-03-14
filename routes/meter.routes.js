@@ -11,11 +11,11 @@ router.get('/',  Data.index)
 
 router.get('/api/insertMedicalsupplies/:value',  Data.insertMedicalsupplies)
 router.get('/api/insertnonMedicalSupplies/:value',  Data.insertnonMedicalSupplies)
-router.get('/api/insertHousework/:value',  Data.insertnonMedicalSupplies)
-router.get('/api/insertOfficeMaterial/:value',  Data.insertnonMedicalSupplies)
-router.get('/api/insertComputerMaterial/:value',  Data.insertnonMedicalSupplies)
-router.get('/api/insertDisinfectantWater/:value',  Data.insertnonMedicalSupplies)
-router.get('/api/insertPrintedForm/:value',  Data.insertnonMedicalSupplies)
-router.get('/api/insertSaline/:value',  Data.insertnonMedicalSupplies)
+router.get('/api/insertHousework/:value',  Data.insertHousework)
+router.get('/api/insertOfficeMaterial/:value',  Data.insertOfficeMaterial)
+router.get('/api/insertComputerMaterial/:value',  Data.insertComputerMaterial)
+router.get('/api/insertDisinfectantWater/:value',  Data.insertDisinfectantWater)
+router.get('/api/insertPrintedForm/:value',  Data.insertPrintedForm)
+router.get('/api/insertSaline/:value',  Data.insertSaline)
 
 module.exports = router;
