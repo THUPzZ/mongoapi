@@ -62,37 +62,38 @@ exports.nonMedicalSupplies = (req, res) => {
     })
 };
 exports.Housework = (req, res) => {
-    db.collection('Housework').find().toArray(function (err, result) {
+    db.collection('houseWork').find().toArray(function (err, result) {
         if (err) throw err
         res.json(result).status(200)
+        //console.log(result)
     })
 };
 exports.OfficeMaterial = (req, res) => {
-    db.collection('OfficeMaterial').find().toArray(function (err, result) {
+    db.collection('officeMaterial').find().toArray(function (err, result) {
         if (err) throw err
         res.json(result).status(200)
     })
 };
 exports.ComputerMaterial = (req, res) => {
-    db.collection('ComputerMaterial').find().toArray(function (err, result) {
+    db.collection('computerMaterial').find().toArray(function (err, result) {
         if (err) throw err
         res.json(result).status(200)
     })
 };
 exports.DisinfectantWater = (req, res) => {
-    db.collection('DisinfectantWater').find().toArray(function (err, result) {
+    db.collection('disinfectantWater').find().toArray(function (err, result) {
         if (err) throw err
         res.json(result).status(200)
     })
 };
 exports.PrintedForm = (req, res) => {
-    db.collection('PrintedForm').find().toArray(function (err, result) {
+    db.collection('printedForm').find().toArray(function (err, result) {
         if (err) throw err
         res.json(result).status(200)
     })
 };
-exports.insertSaline = (req, res) => {
-    db.collection('insertSaline').find().toArray(function (err, result) {
+exports.Saline = (req, res) => {
+    db.collection('saline').find().toArray(function (err, result) {
         if (err) throw err
         res.json(result).status(200)
     })

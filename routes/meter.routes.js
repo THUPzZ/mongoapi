@@ -20,7 +20,7 @@ router.get('/api/OfficeMaterial',  get.OfficeMaterial)
 router.get('/api/ComputerMaterial',  get.ComputerMaterial)
 router.get('/api/DisinfectantWater',  get.DisinfectantWater)
 router.get('/api/PrintedForm',  get.PrintedForm)
-router.get('/api/insertSaline',  get.insertSaline)
+router.get('/api/Saline',  get.Saline)
 
 
 //insert00

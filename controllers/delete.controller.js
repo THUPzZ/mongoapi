@@ -28,37 +28,37 @@ exports.nonMedicalSupplies = (req, res) => {
 };
 exports.Housework = (req, res) => {
     let value = req.body.value
-    db.collection('Housework').deleteOne({ "value": value }, function(err, docs) {
+    db.collection('houseWork').deleteOne({ "value": value }, function(err, docs) {
 		res.json("delete success")
 	})
 };
 exports.OfficeMaterial = (req, res) => {
     let value = req.body.value
-    db.collection('OfficeMaterial').deleteOne({ "value": value }, function(err, docs) {
+    db.collection('officeMaterial').deleteOne({ "value": value }, function(err, docs) {
 		res.json("delete success")
 	})
 };
 exports.ComputerMaterial = (req, res) => {
     let value = req.body.value
-    db.collection('ComputerMaterial').deleteOne({ "value": value }, function(err, docs) {
+    db.collection('computerMaterial').deleteOne({ "value": value }, function(err, docs) {
 		res.json("delete success")
 	})
 };
 exports.DisinfectantWater = (req, res) => {
     let value = req.body.value
-    db.collection('DisinfectantWater').deleteOne({ "value": value }, function(err, docs) {
+    db.collection('disinfectantWater').deleteOne({ "value": value }, function(err, docs) {
 		res.json("delete success")
 	})
 };
 exports.PrintedForm = (req, res) => {
     let value = req.body.value
-    db.collection('PrintedForm').deleteOne({ "value": value }, function(err, docs) {
+    db.collection('printedForm').deleteOne({ "value": value }, function(err, docs) {
 		res.json("delete success")
 	})
 };
 exports.Saline = (req, res) => {
     let value = req.body.value
-    db.collection('Saline').deleteOne({ "value": value }, function(err, docs) {
+    db.collection('saline').deleteOne({ "value": value }, function(err, docs) {
 		res.json("delete success")
 	})
 };
