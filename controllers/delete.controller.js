@@ -20,6 +20,7 @@ exports.medicalsupplies = (req, res) => {
 		res.json("delete success")
 	})
 };
+
 exports.nonMedicalSupplies = (req, res) => {
     let value = req.body.value
     db.collection('nonMedicalSupplies').deleteOne({ "value": value }, function(err, docs) {
