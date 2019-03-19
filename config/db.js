@@ -1,4 +1,4 @@
 var config = {
-    db : "mongodb://localhost:27017/DB"
+    db : "mongodb://172.17.0.1:27017/DB"
  };
  module.exports = config;
