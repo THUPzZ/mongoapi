@@ -5,7 +5,7 @@ var httpProxy = require('http-proxy');
 var http = require("http");
 var join = require("path").join;
 var path = require("path");
-var port = 3030;
+var port = 3000;
 var cors = require("cors");
 
 var bodyParser = require('body-parser');
@@ -29,7 +29,7 @@ var allowedOrigins = ['http://127.0.0.1:4200'];
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-var MeterRouter = require('./routes/meter.routes');
+var MeterRouter = require('../routes/meter.routes');
 
 var httpsServer = http.createServer(app);
 httpsServer.listen(port, function() {
