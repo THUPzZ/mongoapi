@@ -9,7 +9,7 @@
     "server_dev": "cross-env NODE_ENV=dev node server",
     "server_staging": "cross-env NODE_ENV=staging node server",
     "server_production": "cross-env NODE_ENV=production node server",
-    "start":"pm2-docker process.yml --watch"
+    "start":"pm2-docker process.yml"
   },
   "keywords": [],
   "author": "",
