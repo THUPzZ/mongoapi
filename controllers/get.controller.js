@@ -11,7 +11,7 @@ db.on('error',function(err){
       console.log(err);
 });
 exports.index = (req, res) => {
-    res.send('Web Application Programing Interface');
+    res.send('hello world');
 };
 
 exports.tolist = (req, res) => {

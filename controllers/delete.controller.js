@@ -10,9 +10,6 @@ db.once('open', function(){
 db.on('error',function(err){
       console.log(err);
 });
-exports.index = (req, res) => {
-    res.send('Web Application Programing Interface');
-};
 
 exports.medicalsupplies = (req, res) => {
     let value = req.body.value

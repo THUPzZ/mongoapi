@@ -7,7 +7,7 @@ var join = require("path").join;
 var path = require("path");
 var port = 3000;
 var cors = require("cors");
-
+var express = require('express') 
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 app.use(express.static("./"));
