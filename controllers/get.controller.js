@@ -4,6 +4,8 @@ var mongoose = require('mongoose');
 mongoose.connect(config.db);
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
+  
+
 db.once('open', function(){
    // console.log('connection to mongodb');
 });
@@ -48,13 +50,17 @@ exports.approve_user = (req, res) => {
         res.json(result).status(200)
     })
 };
-/////////////////////////////////////////////////////////////////////
+exports.auth = (req,res,next) =>{
+    var set = new Date()
+    let dateserver = `${set.getFullYear()}${set.getMonth()}${set.getDate()}${set.getHours()}`
 
-
-
-
-
-
-
-
-
+    let autharization = req.headers["access-autharization"]
+    let auth = req.headers["access-auth"]
+    let date = req.headers["x-sskh-date"]
+    if(autharization == 'c3NraA==' && date==dateserver && auth == 'd3d3LnNza2gubW9waC5nby50aA==' ){
+        next();
+    }else{
+        res.json([])
+    }
+}
+////////////////////////////////////////////////////////////////////
