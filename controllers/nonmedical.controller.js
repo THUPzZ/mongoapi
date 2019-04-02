@@ -7,7 +7,7 @@ var db = mongoose.connection;
 db.on('error',function(err){
       console.log(err);
 });
-var dbName = 'medicalsupplies'
+var dbName = 'nonmedicalsupplies'
 
 exports.getNonMedical = (req, res) => {
     db.collection(dbName).find().toArray(function (err, result) {
